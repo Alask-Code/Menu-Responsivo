@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    transition: 0.25s ease-in, color 0s;
+    user-select: none;
+    font-family: 'Inter';
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    transform: scale(1.5);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(120deg, pink, purple);
+}
+
+.card {
+    padding: 12px;
+    width: 300px;
+    height: fit-content;
+    border-radius: 18px;
+    background: white;
+}
+
+.section {
+    padding: 12px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    background: #626262;
+}
+
+.placeholder {
+    font-size: 10px;
+    font-weight: 700;
+    color: #626262;
+    text-transform: uppercase;
+}
+
+.line {
+    width: 100%;
+    height: 28px;
+    display: flex;
+    margin: 3px 0px;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: flex-start;
+}
+
+.line:hover {
+    cursor: pointer;
+    color: white;
+    background: dodgerblue;
+}
+
+.line p {
+    padding: 0 5px;
+    font-weight: 300;
+    font-size: 16px;
+    width: 80%;
+}
+
+.line i {
+    width: 10%;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line.exit:hover {
+    background: red;
+}
+
+
+.card.dark {
+    background: #303030;
+    color: white;
+}
+
+.card.dark hr {
+    background: #999999;
+}
+
+.card.dark .section .placeholder {
+    color: #999999;
+}
+
+.card.dark .section .line:hover {
+    background: #606060;
+}
+
+.card.dark .section .line.exit:hover {
+    background: red;
+}
