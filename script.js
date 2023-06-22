@@ -4,6 +4,7 @@ var darkmode = false
 function toggleDark() {
     if (darkmode == false) {
         toggleIcon.style.opacity = "0"
+        document.body.classList.toggle('dark-mode')
         setTimeout(() => {
             toggleIcon.classList.remove('fa-moon')
             toggleIcon.classList.add('fa-sun')
@@ -14,6 +15,7 @@ function toggleDark() {
         darkmode = true
     } else {
         toggleIcon.style.opacity = "0"
+        document.body.classList.toggle('dark-mode')
         setTimeout(() => {
             toggleIcon.classList.remove('fa-sun')
             toggleIcon.classList.add('fa-moon')
