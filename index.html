@@ -12,58 +12,71 @@
 
 <body>
     <div class="card">
-        <div class="section">
-            <p class="placeholder">Conta</p>
-            <div class="line"><i class="fa-solid fa-user"></i>
-                <p>Perfil</p>
-                <i class="fa-solid fa-chevron-right"></i>
+        <div class="menu">
+            <div class="section">
+                <p class="placeholder">Conta</p>
+                <div class="line"><i class="fa-solid fa-user"></i>
+                    <p>Perfil</p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="line"><i class="fa-solid fa-users"></i>
+                    <p>Usuarios</p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
             </div>
-            <div class="line"><i class="fa-solid fa-users"></i>
-                <p>Usuarios</p>
-                <i class="fa-solid fa-chevron-right"></i>
+            <hr>
+            <hr>
+            <div class="section">
+                <p class="placeholder">Dispositivo</p>
+                <div class="line"><i class="fa-solid fa-folder"></i>
+                    <p>Arquivos</p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="line"><i class="fa-solid fa-circle-nodes"></i>
+                    <p>Aparelhos Conectados</p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+            <hr>
+            <hr>
+            <div class="section">
+                <p class="placeholder">Midia e Entreterimento</p>
+                <div class="line"><i class="fa-solid fa-photo-film"></i>
+                    <p>Fotos e Videos</p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="line"><i class="fa-solid fa-shapes"></i>
+                    <p>Loja de Aplicativos</p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+            <hr>
+            <hr>
+            <div class="section">
+                <div class="line" onclick="toggleDark()">
+                    <i class="dark-icon fa-solid fa-moon"></i>
+                    <p>Modo Noturno</p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="line exit" onclick="exit()">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <p>Sair</p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
             </div>
         </div>
-        <hr>
-        <hr>
-        <div class="section">
-            <p class="placeholder">Dispositivo</p>
-            <div class="line"><i class="fa-solid fa-folder"></i>
-                <p>Arquivos</p>
-                <i class="fa-solid fa-chevron-right"></i>
-            </div>
-            <div class="line"><i class="fa-solid fa-circle-nodes"></i>
-                <p>Aparelhos Conectados</p>
-                <i class="fa-solid fa-chevron-right"></i>
-            </div>
-        </div>
-        <hr>
-        <hr>
-        <div class="section">
-            <p class="placeholder">Midia e Entreterimento</p>
-            <div class="line"><i class="fa-solid fa-photo-film"></i>
-                <p>Fotos e Videos</p>
-                <i class="fa-solid fa-chevron-right"></i>
-            </div>
-            <div class="line"><i class="fa-solid fa-shapes"></i>
-                <p>Loja de Aplicativos</p>
-                <i class="fa-solid fa-chevron-right"></i>
-            </div>
-        </div>
-        <hr>
-        <hr>
-        <div class="section">
-            <div class="line dark-mode" onclick="toggleDark()">
-                <i class="icon fa-solid fa-moon"></i>
-                <p>Modo Noturno</p>
-                <i class="fa-solid fa-chevron-right"></i>
-            </div>
-            <div class="line exit">
-                <i class="fa-solid fa-right-to-bracket"></i>
-                <p>Sair</p>
-                <i class="fa-solid fa-chevron-right"></i>
-            </div>
-        </div>
+        <div class="exit-menu">
 
+            <div class="warning">
+                <i class="fa-solid fa-power-off"></i>
+                <p>Voce Deseja Sair?</p>
+            </div>
+            <div class="confirm-wrapper">
+                <button class="back-button" onclick="returnBack()">Voltar</button>
+                <button class="confirm-exit">Sair</button>
+            </div>
+
+        </div>
     </div>
 
 </body>
