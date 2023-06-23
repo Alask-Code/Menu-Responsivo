@@ -29,6 +29,9 @@ body.dark-mode .icon {
     color: var(--d-accent-color);
 }
 
+body.dark-mode .line:hover .fa-sun{
+  color: var(--d-white-mode);
+}
 body.dark-mode .fa-sun {
     color: var(--d-white-mode);
 }
