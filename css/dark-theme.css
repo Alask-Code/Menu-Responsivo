@@ -6,6 +6,7 @@
     --d-text-color: #CBCBCB;
     --d-hover-text-color: #CBCBCB;
     --d-exit-color: #B70404;
+    --d-white-mode: #F9C74F;
 }
 
 body.dark-mode {
@@ -19,10 +20,25 @@ body.dark-mode .card {
 body.dark-mode .placeholder {
     color: var(--d-accent-color);
 }
-body.dark-mode .line{
+
+body.dark-mode .line {
     color: var(--d-text-color);
 }
+
+body.dark-mode .icon {
+    color: var(--d-accent-color);
+}
+
+body.dark-mode .fa-sun {
+    color: var(--d-white-mode);
+}
+
+body.dark-mode .fa-right-to-bracket {
+    color: var(--d-exit-color);
+}
+
 body.dark-mode .line:hover {
+    color:  var(--d-hover-text-color);
     background: var(--d-hover-accent-color);
 }
 
@@ -33,6 +49,9 @@ body.dark-mode hr {
 
 body.dark-mode .line.exit-label:hover {
     background: var(--d-exit-color);
+}
+body.dark-mode .line.exit-label:hover .fa-right-to-bracket{
+    color: var(--d-hover-text-color);
 }
 
 body.dark-mode .exit-menu .confirm-wrapper button {

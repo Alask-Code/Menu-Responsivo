@@ -19,28 +19,23 @@ body {
 .placeholder {
     color: var(--w-accent-color);
 }
-.line{
+
+.line {
     color: var(--w-text-color);
 }
-.line:hover {
+
+.line:hover{
     color: var(--w-hover-text-color);
     background: var(--w-hover-accent-color);
 }
-
+.line:hover i{
+    color: var(--w-hover-text-color);
+}
 hr {
     background: var(--w-accent-color);
 }
 
 
 .line.exit-label:hover {
-    background: var(--w-exit-color);
-}
-
-.exit-menu .confirm-wrapper button {
-    background: yellow;
-    color: white;
-}
-
-.exit-menu .confirm-wrapper .confirm-exit {
     background: var(--w-exit-color);
 }
