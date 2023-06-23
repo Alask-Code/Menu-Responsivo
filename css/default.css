@@ -1,74 +1,37 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
-    overflow: hidden;
-    user-select: none;
-    font-family: 'Inter';
-    box-sizing: border-box;
-    transition: 0.25s ease-in, color 0s;
-}
-
-html,
-body {
-    width: 100%;
-    height: 100%;
-}
-
-body {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    background: #999999;
-}
-
-body.dark-mode {
-    background: #101010;
-}
-
 .card {
-    padding: 12px;
     width: 300px;
+    padding: 12px;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
     align-items: center;
     height: fit-content;
     border-radius: 18px;
-    background: white;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .menu {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 
 .section {
     padding: 12px;
     width: 100%;
-    height: fit-content;
     display: flex;
+    height: fit-content;
     align-items: flex-start;
     flex-direction: column;
     justify-content: space-between;
 }
 
-hr {
-    width: 90%;
-    height: 0.5px;
-    background: #626262;
-}
 
 .placeholder {
     font-size: 10px;
     font-weight: 700;
-    color: #626262;
     text-transform: uppercase;
 }
 
@@ -77,15 +40,10 @@ hr {
     height: 28px;
     display: flex;
     margin: 3px 0px;
+    cursor: pointer;
     align-items: center;
     border-radius: 10px;
     justify-content: flex-start;
-}
-
-.line:hover {
-    cursor: pointer;
-    color: white;
-    background: dodgerblue;
 }
 
 .line p {
@@ -103,40 +61,20 @@ hr {
     align-items: center;
 }
 
-.line.exit:hover {
-    background: red;
-}
-
-
-.card.dark {
-    background: #303030;
-    color: white;
-}
-
-.card.dark hr {
-    background: #999999;
-}
-
-.card.dark .section .placeholder {
-    color: #999999;
-}
-
-.card.dark .section .line:hover {
-    background: #606060;
-}
-
-.card.dark .section .line.exit:hover {
-    background: red;
+hr {
+    width: 90%;
+    height: 0.5px;
 }
 
 .exit-menu {
     opacity: 0;
-    display: none;
     width: 100%;
-    transform: translateX(-60px);
-    justify-content: space-between;
+    display: none;
+    height: 407px;
     align-items: center;
     flex-direction: column;
+    transform: translateX(0px);
+    justify-content: space-between;
 }
 
 .exit-menu .warning {
@@ -156,27 +94,19 @@ hr {
 }
 
 .exit-menu .confirm-wrapper {
+    gap: 12px;
     width: 100%;
     display: flex;
-    gap: 12px;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 .exit-menu .confirm-wrapper button {
-    cursor: pointer;
-    background: #999999;
-    color: white;
-    font-size: 18px;
-    font-weight: 300;
-    border: 2px solid #606060;
     width: 50%;
     height: 100%;
     padding: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 300;
     border-radius: 10px;
-}
-
-.exit-menu .confirm-wrapper .confirm-exit {
-    background: red;
-    border: none;
 }

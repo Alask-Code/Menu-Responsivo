@@ -1,0 +1,45 @@
+:root {
+    --d-bkg-color: #301B3F;
+    --d-card-color: #151515;
+    --d-accent-color: #3C415C;
+    --d-hover-accent-color: var(--d-accent-color);
+    --d-text-color: #B4A5A5;
+    --d-hover-text-color: #B4A5A5;
+    --d-exit-color: #B70404;
+}
+
+body.dark-mode {
+    background: var(--d-bkg-color);
+}
+
+body.dark-mode .card {
+    background: var(--d-card-color);
+}
+
+body.dark-mode .placeholder {
+    color: var(--d-accent-color);
+}
+body.dark-mode .line{
+    color: var(--d-text-color);
+}
+body.dark-mode .line:hover {
+    background: var(--d-hover-accent-color);
+}
+
+body.dark-mode hr {
+    background: var(--d-accent-color);
+}
+
+
+body.dark-mode .line.exit-label:hover {
+    background: var(--d-exit-color);
+}
+
+body.dark-mode .exit-menu .confirm-wrapper button {
+    background: yellow;
+    color: white;
+}
+
+body.dark-mode .exit-menu .confirm-wrapper .confirm-exit {
+    background: var(--d-exit-color);
+}

@@ -1,0 +1,46 @@
+:root {
+    --w-bkg-color: #A0C49D;
+    --w-card-color: #E1ECC8;
+    --w-accent-color: #1E5128;
+    --w-hover-accent-color: var(--w-accent-color);
+    --w-text-color: #1E5128;
+    --w-hover-text-color: #F7FFE5;
+    --w-exit-color: #B70404;
+}
+
+body {
+    background: var(--w-bkg-color);
+}
+
+.card {
+    background: var(--w-card-color);
+}
+
+.placeholder {
+    color: var(--w-accent-color);
+}
+.line{
+    color: var(--w-text-color);
+}
+.line:hover {
+    color: var(--w-hover-text-color);
+    background: var(--w-hover-accent-color);
+}
+
+hr {
+    background: var(--w-accent-color);
+}
+
+
+.line.exit-label:hover {
+    background: var(--w-exit-color);
+}
+
+.exit-menu .confirm-wrapper button {
+    background: yellow;
+    color: white;
+}
+
+.exit-menu .confirm-wrapper .confirm-exit {
+    background: var(--w-exit-color);
+}

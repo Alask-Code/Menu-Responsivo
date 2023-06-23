@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/4685d8d742.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="javascript/toggleDarkMode.js" defer></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/white-theme.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
     <title>Menu Responsivo</title>
 </head>
 
@@ -15,11 +18,13 @@
         <div class="menu">
             <div class="section">
                 <p class="placeholder">Conta</p>
-                <div class="line"><i class="fa-solid fa-user"></i>
+                <div class="line">
+                    <i class="fa-solid fa-user"></i>
                     <p>Perfil</p>
                     <i class="fa-solid fa-chevron-right"></i>
                 </div>
-                <div class="line"><i class="fa-solid fa-users"></i>
+                <div class="line">
+                    <i class="fa-solid fa-users"></i>
                     <p>Usuarios</p>
                     <i class="fa-solid fa-chevron-right"></i>
                 </div>
@@ -28,11 +33,13 @@
             <hr>
             <div class="section">
                 <p class="placeholder">Dispositivo</p>
-                <div class="line"><i class="fa-solid fa-folder"></i>
+                <div class="line">
+                    <i class="fa-solid fa-folder"></i>
                     <p>Arquivos</p>
                     <i class="fa-solid fa-chevron-right"></i>
                 </div>
-                <div class="line"><i class="fa-solid fa-circle-nodes"></i>
+                <div class="line">
+                    <i class="fa-solid fa-circle-nodes"></i>
                     <p>Aparelhos Conectados</p>
                     <i class="fa-solid fa-chevron-right"></i>
                 </div>
@@ -41,11 +48,13 @@
             <hr>
             <div class="section">
                 <p class="placeholder">Midia e Entreterimento</p>
-                <div class="line"><i class="fa-solid fa-photo-film"></i>
+                <div class="line">
+                    <i class="fa-solid fa-photo-film"></i>
                     <p>Fotos e Videos</p>
                     <i class="fa-solid fa-chevron-right"></i>
                 </div>
-                <div class="line"><i class="fa-solid fa-shapes"></i>
+                <div class="line">
+                    <i class="fa-solid fa-shapes"></i>
                     <p>Loja de Aplicativos</p>
                     <i class="fa-solid fa-chevron-right"></i>
                 </div>
@@ -54,11 +63,11 @@
             <hr>
             <div class="section">
                 <div class="line" onclick="toggleDark()">
-                    <i class="dark-icon fa-solid fa-moon"></i>
+                    <i class="toggle-dark-mode fa-solid fa-moon"></i>
                     <p>Modo Noturno</p>
                     <i class="fa-solid fa-chevron-right"></i>
                 </div>
-                <div class="line exit" onclick="exit()">
+                <div class="line exit-label">
                     <i class="fa-solid fa-right-to-bracket"></i>
                     <p>Sair</p>
                     <i class="fa-solid fa-chevron-right"></i>
@@ -72,7 +81,7 @@
                 <p>Voce Deseja Sair?</p>
             </div>
             <div class="confirm-wrapper">
-                <button class="back-button" onclick="returnBack()">Voltar</button>
+                <button class="back-button">Voltar</button>
                 <button class="confirm-exit">Sair</button>
             </div>
 
