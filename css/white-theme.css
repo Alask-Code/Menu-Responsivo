@@ -1,10 +1,10 @@
 :root {
-    --w-bkg-color: #A0C49D;
-    --w-card-color: #E1ECC8;
-    --w-accent-color: #1E5128;
+    --w-bkg-color: #66A1D7;
+    --w-card-color: #CBCBCB;
+    --w-accent-color: #66A1D7;
     --w-hover-accent-color: var(--w-accent-color);
-    --w-text-color: #1E5128;
-    --w-hover-text-color: #F7FFE5;
+    --w-text-color: #081620;
+    --w-hover-text-color: #CBCBCB;
     --w-exit-color: #B70404;
 }
 

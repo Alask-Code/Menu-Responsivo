@@ -1,10 +1,10 @@
 :root {
-    --d-bkg-color: #301B3F;
-    --d-card-color: #151515;
-    --d-accent-color: #3C415C;
+    --d-bkg-color: #67697C;
+    --d-card-color: #081620;
+    --d-accent-color: #67697C;
     --d-hover-accent-color: var(--d-accent-color);
-    --d-text-color: #B4A5A5;
-    --d-hover-text-color: #B4A5A5;
+    --d-text-color: #CBCBCB;
+    --d-hover-text-color: #CBCBCB;
     --d-exit-color: #B70404;
 }
 
