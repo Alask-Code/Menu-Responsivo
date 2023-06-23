@@ -42,7 +42,7 @@ body.dark-mode .line:hover {
     background: var(--d-hover-accent-color);
 }
 body.dark-mode .line:hover i{
-    color: var(--d-hover-text-color;
+    color: var(--d-hover-text-color);
 }
 body.dark-mode hr {
     background: var(--d-accent-color);
